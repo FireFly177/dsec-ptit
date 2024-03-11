@@ -1,0 +1,10 @@
+Labname telnetlab
+
+Student              |      telnetview |         sshview |    failed_login |
+==================== | =============== | =============== | =============== |
+B21DCCN299           |               Y |               Y |               Y |
+dog_at_cat.com       |                 |                 |                 |
+What is automatically assessed for this lab:
+	failed_login: Failed login as expected.
+	telnetview: viewed file from telnet
+	sshview: viewed file from ssh

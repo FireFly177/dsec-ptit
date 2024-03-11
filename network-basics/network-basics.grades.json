@@ -1,0 +1,17 @@
+{
+    "B21DCCN299.network-basics": {
+        "parameter": {},
+        "grades": {
+            "ssh-dump": true,
+            "arp": true
+        },
+        "firstlevelzip": {},
+        "secondlevelzip": {},
+        "actualwatermark": "b2b62c66602685ee758f6df01da5d406",
+        "expectedwatermark": "b2b62c66602685ee758f6df01da5d406",
+        "labcount": {
+            "start": [],
+            "redo": []
+        }
+    }
+}

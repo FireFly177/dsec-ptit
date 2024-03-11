@@ -1,0 +1,9 @@
+Labname network-basics
+
+Student              |        ssh-dump |             arp |
+==================== | =============== | =============== |
+B21DCCN299           |               Y |               Y |
+What is automatically assessed for this lab:
+	ssh-dump: Did ssh while tcpdump ran
+	arp: observed ARP table with an entry for box1
+

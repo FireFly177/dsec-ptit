@@ -1,0 +1,9 @@
+Labname nmap-ssh
+
+Student              |      nmap_count |    tshark_count |   tcpdump_count |         sshview |
+==================== | =============== | =============== | =============== | =============== |
+B21DCCN299           |               6 |               8 |               4 |               Y |
+What is automatically assessed for this lab:
+
+	nmap_count, tshark_count, tcpdump_count: quantity of tool invocations
+	sshview: viewed the secret file using ssh

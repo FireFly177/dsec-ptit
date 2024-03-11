@@ -1,0 +1,11 @@
+Labname users
+
+Student              |      bobcattart |       bobcattmp |        marybake |        lisasudo |
+==================== | =============== | =============== | =============== | =============== |
+B21DCCN299           |               Y |               Y |               Y |               Y |
+What is automatically assessed for this lab:
+	bobcattart: User bob command with "tarts.txt"
+	bobcattmp: User bob command with tmpfile.txt
+	marybake: mary is member of bakers group
+	lisasudo: Lisa was added with sudo privileges
+

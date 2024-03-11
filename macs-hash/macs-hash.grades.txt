@@ -1,0 +1,12 @@
+Labname macs-hash
+
+Student              |  collide1_count |  collide2_count |    shasum_count |    did_7_shasum |   hashed_floppy |      hashed_iou |     openssl_key |
+==================== | =============== | =============== | =============== | =============== | =============== | =============== | =============== |
+B21DCCN299           |               4 |               3 |              12 |               Y |               Y |               Y |               Y |
+What is automatically assessed for this lab:
+
+	did_7_shasum: Did at least 7 different sha checksums
+	hashed_floppy: hashed the floppy
+	hashed_iou: hashed the iou file
+	collide1_count, collide2_count, shasum_count: Count of program invocation
+	openssl_key: brute force ran openssl to discover the key

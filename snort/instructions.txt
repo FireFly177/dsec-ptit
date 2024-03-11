@@ -1,0 +1,15 @@
+Step 1: run ./start_snort on tom@snort
+Step 2: run sudo nmap www.example.com on hank
+Step 3: add this rule to /etc/snort/rules/local.rules: alert tcp any any -> any any (msg:"TCP detected"; sid:00002;)
+Step 4: restart snort on tom, firefox www.example.com on hank
+Step 5: change rules on /etc/snort/rules/local.rules: alert tcp any any -> any any (content:"CONFIDENTIAL"; msg:"CONFIDENTIAL detected"; sid:00002;)
+Step 6: restart snort on tom. firefox www.example.com/plan.html on hank (remember to clear firefox data and history)
+Step 7: run snort on tom, sudo nmap www.example.com on mary (remember to clear firefox data and history)
+Step 8: add rules to /etc/rc.local on ubuntu@gateway: iptables -t mangle -A PREROUTING -i $lan2 -j TEE --gateway 192.168.3.1. run sudo /etc/rc.local to apply rule
+Step 9: rerun snort on tom, nmap www.example.com on mary (remember to clear firefox data and history)
+Step 10: rerun snort on tom, firefox www.example.com/plan.html on mary
+Step 11: add rules to /etc/rc.local on ubuntu@gateway: iptables -I OUTPUT --icmp-type destination-unreachable -j DROP. run sudo /etc/rc.local to apply rule
+Step 12: change rules on /etc/snort/rules/local.rules: alert tcp 192.168.1.2/24 any -> 192.168.1.10/24 any (content:"CONFIDENTIAL"; msg:"CONFIDENTIAL detected"; sid:00002;)
+Step 13: rerun snort on tom, firefox www.example.com/plan.html on mary and hank (remember to clear firefox data and history)
+Step 14: rerun snort on tom, sudo nmap www.example.com on mary and hank
+

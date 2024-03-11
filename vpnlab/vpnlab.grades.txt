@@ -1,0 +1,11 @@
+Labname vpnlab
+
+Student              |
+==================== |
+B21DCCN299           |
+What is automatically assessed for this lab:
+
+	: was able to access http over the vpn
+	get_index_ok = matchany : string_equal : getindexhtml : answer=True
+	get_link1_ok = matchany : string_equal : getlink1html : answer=True
+	get_link2_ok = matchany : string_equal : getlink2html : answer=True

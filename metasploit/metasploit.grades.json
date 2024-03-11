@@ -1,0 +1,53 @@
+{
+    "B21DCCN299.metasploit": {
+        "parameter": {
+            "FSTRING": "5b78310340b94f96966690c8ea6233bd"
+        },
+        "grades": {
+            "_rlogin": true,
+            "_rloginview": true,
+            "rlogin_ok": true,
+            "_ingreslock": true,
+            "_ingreslockview": true,
+            "ingreslock_ok": true,
+            "_distccd": true,
+            "_distccdview": true,
+            "_nmapdistccd_ok": true,
+            "distccd_ok": true,
+            "_irc": true,
+            "_ircview": true,
+            "_nmapirc_ok": true,
+            "irc_ok": true,
+            "_vsftpd": true,
+            "_vsftpdview": true,
+            "_nmapvsftpd_ok": true,
+            "vsftpd_ok": true,
+            "_samba": true,
+            "_sambaview": true,
+            "_nmapsamba_ok": true,
+            "samba_ok": true,
+            "_httpphp": true,
+            "_httpphpview": true,
+            "_nmaphttpphp_ok": true,
+            "httpphp_ok": true,
+            "_postgres": true,
+            "_postgresview": true,
+            "_nmappostgres_ok": true,
+            "postgres_ok": true,
+            "_distccd_exploit": true,
+            "_irc_exploit": true,
+            "_vsftpd_exploit": true,
+            "_samba_exploit": true,
+            "_httpphp_exploit": true,
+            "_postgres_exploit": true
+        },
+        "firstlevelzip": {},
+        "secondlevelzip": {},
+        "actualwatermark": "2d8ac28af0f4665e8ab5dc745f486457",
+        "expectedwatermark": "2d8ac28af0f4665e8ab5dc745f486457",
+        "labcount": {
+            "start": [],
+            "redo": []
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "B21DCCN299.nmap-ssh": {
+        "parameter": {
+            "randport": "2559",
+            "secretpwd": "1a2816"
+        },
+        "grades": {
+            "nmap_count": 6,
+            "tshark_count": 8,
+            "tcpdump_count": 4,
+            "sshview": true
+        },
+        "firstlevelzip": {},
+        "secondlevelzip": {},
+        "actualwatermark": "fc3411072b29ac34ca82e381c8a8ac7b",
+        "expectedwatermark": "fc3411072b29ac34ca82e381c8a8ac7b",
+        "labcount": {
+            "start": [],
+            "redo": []
+        }
+    }
+}
